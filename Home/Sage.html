@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Sage</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="Valorant-Logo-PNG-Pic.png">
+</head>
+
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+
+       <header>
+        <nav class="navbar">
+            <div class="menu" id="menuactive">
+                <img src="../Pictures/img/Menu.png">
+            </div>
+    
+            <div class="logo">
+                <img src="../Pictures/img/Valorant-Logo-PNG-Pic.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <div class="menu-amb" id="menuAmb">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="Clove.html"><li>Clove</li></a>
+            <a href="Raze.html"><li>Raze</li></a>
+            <a href="Sage.html"><li>Sage</li></a>
+            <a href="Fade.html"><li>Fade</li></a>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById("menuactive").addEventListener("click", function () {
+            document.getElementById("menuAmb").classList.toggle("show");
+        });
+    </script>
+
+<div class="container">
+    <div class="img">
+        <div class="img-center">
+            <img src="../Pictures/img/SAGE.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div class="text">
+        <div class="text-center">
+            <div class="title">
+                <h1>Sage</h1>
+            </div>
+            <div class="text-p">
+                <p>
+                    Como uma verdadeira fortaleza chinesa, Sage traz segurança para si mesma e para a equipe aonde quer que vá. Capaz de reviver aliados e rechaçar investidas agressivas, ela oferece um centro de calmaria em meio ao caos da batalha.
+                </p>
+            </div>
+
+            <div class="skill">
+                <div class="skill-item">
+                    <img src="../Pictures/img/C Sage.png" alt="ORBE DE BARREIRA">
+                    <p>ORBE DE BARREIRA: Posiciona uma parede sólida de cristal.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="../Pictures/img/E Sage.png" alt="ORBE CURATIVO">
+                    <p> ORBE CURATIVO: Ative sobre um aliado ferido para ativar uma cura ao longo do tempo.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="../Pictures/img/X Sage.png" alt="RESSURREIÇÃO">
+                    <p> RESSURREIÇÃO: Ative sobre um aliado morto para começar a revivê-lo. Depois de uma breve canalização, o aliado voltará com a Vida completa.</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="foot-btn-suport-client">
+        <button class="butto2">Suporte ao Cliente</button>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

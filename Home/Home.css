@@ -1,0 +1,268 @@
+.poetsen-one-regular {
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+.kodchasan-regular {
+        font-family: "Kodchasan", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #250000;
+}
+
+.navbar{
+  display: flex;
+  background-color: black;
+  height: 90px;
+  align-items: center;
+  width: 100%;
+}
+
+.menu{
+  width: 70px;
+  height: 35px;
+  padding-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.logo{
+  width: 100px;
+  height: 40px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.logo img{
+  width: 200px;
+  height: auto;
+}
+
+.menu-amb {
+  width: 200px;
+  height: 100vw; /* Alterado para 100% da altura da viewport para cobrir toda a tela */
+  position: absolute;
+  background: black;
+  top: 90px;
+  left: -200px; /* Inicialmente fora da tela */
+  transition: left 0.3s ease; /* Transição suave para a propriedade left */
+}
+
+.menu-amb.show {
+  left: 0; /* Mostra a div quando a classe .show é adicionada */
+}
+
+ul{
+  padding: 10px;
+    font-size: 1.5vw;
+}
+
+ul a li{
+  color: #fff;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+li:hover{
+  color: red;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.img{
+  width: 100%;
+}
+
+.img-center{
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.img .img-center img{
+  width: 100%; /* Alterado para 100% para se ajustar ao tamanho do contêiner */
+  margin-top: 20px;
+  height: 30vw;
+}
+
+.text{
+  width: 90%; /* Alterado para 90% para se ajustar ao tamanho do contêiner */
+  margin: 0 auto;
+  padding: 5vw; /* Adicionado padding responsivo em relação à largura da viewport */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total da div */
+}
+
+.text-center{
+  width: 100%;
+}
+
+.text .text-center h1{
+  font-size: 5vw; /* Tamanho da fonte responsivo em relação à largura da viewport */
+  margin: 2vw 0 1vw 0; /* Margens responsivas em relação à largura da viewport */
+  color: white;
+  font-family: "Poetsen One";
+}
+
+.title{
+  text-align: center;
+}
+
+.text .text-center .text-p p{
+  font-size: 2vw; /* Tamanho da fonte responsivo em relação à largura da viewport */
+  font-family: "kodchasan";
+  margin-bottom: 2vw; /* Margem inferior responsiva em relação à largura da viewport */
+  margin-top: 3vw; /* Margem superior responsiva em relação à largura da viewport */
+  text-align: justify;
+  color: white;
+}
+
+.btn-play{
+  text-align: center;
+}
+
+.btn-play button{
+  background-color: rgb(255, 0, 0);
+  color: white;
+  padding: 1.3vw 2.5vw;
+  font-size: 2.5vw;
+  font-family: "Poetsen One";
+  border: none;
+  cursor: pointer;
+  width: 35%;
+}
+
+.btn-play button:hover{
+  background-color: #640000;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens no início do contêiner */
+  gap: 40px; /* Espaço entre cada skill-item */
+}
+
+.skill-item {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente os ícones e textos */
+  width: 100%; /* Garante que cada skill-item ocupe a largura total do contêiner */
+}
+
+.skill-item img {
+  width: 80px; /* Ajuste conforme necessário */
+  height: auto;
+  margin-right: 20px; /* Espaço entre o ícone e o texto */
+  display: flex;
+}
+
+.skill-item p {
+  flex: 1;
+  text-align: justify; /* Alinha o texto à esquerda */
+  margin: 0; /* Remove a margem padrão do parágrafo */
+  font-size: 2rem; /* Ajuste conforme necessário */
+  color: white; /* Ajuste conforme necessário */
+  gap: 40px; /* Espaço entre cada skill-item */
+  font-size: 2vw; /* Tamanho da fonte responsivo em relação à largura da viewport */
+  font-family: "kodchasan";
+  text-align: justify;
+  color: white;
+  margin: 2vw 0 1vw 0;
+}
+
+footer{
+  text-align: center;
+    width: 100%;
+    margin-top: 5vw;
+    position: fixed;
+    bottom: 0%;
+    background-color: black;
+}
+
+.foot-btn-suport-client{
+  text-align: center;
+  width: 100%;
+}
+
+.foot-btn-suport-client button{
+  background-color: rgb(255, 0, 0);
+  color: white;
+  width: 320px;
+  font-size: 30px;
+  font-family: "Poetsen One";
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.foot-btn-suport-client button:hover{
+  background-color: rgb(83, 0, 0);
+}
+
+@media (max-width: 600px) {
+  .skill{
+    display: flex;
+  }
+  .skill-item {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    font-size: 2vw; /* Tamanho da fonte responsivo em relação à largura da viewport */
+    font-family: "kodchasan";
+    margin-bottom: 2vw; /* Margem inferior responsiva em relação à largura da viewport */
+    margin-top: 3vw; /* Margem superior responsiva em relação à largura da viewport */
+    text-align: justify;
+    color: white;
+  }
+
+  .skill-item img {
+    margin-right: 0;
+    margin-bottom: 10px;
+    display: flex;
+  }
+
+  body{
+    background-color: rgb(0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .foot-btn-suport-client button {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .menu-amb{
+    height: 100%;
+  }
+
+  ul{
+      font-size: 5.5vw;
+  }
+
+
+}
+
+
+
+
+
